@@ -8,7 +8,7 @@ namespace Projeto01
     {
         static void Main(string[] args)
         {
-            int op, v1I, v2I, v3I, v4I, totalI;
+            int op, v1I, v2I, v3I, v4I, totalI, idFu;
             double pi, v1D, v2D, totalD;
 
             Console.WriteLine("");
@@ -57,7 +57,17 @@ namespace Projeto01
                     break;
                 case 4:
                     Console.WriteLine("--x-- Calcular salário --x--");
+                    Console.WriteLine("Código do Funcionário; ");
+                    idFu = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Nome do funcionário; ");
+                    string Nome = Console.ReadLine();
+                    Console.WriteLine("Valor hora; ");
+                    v2D = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+                    Console.WriteLine("Horas trabalhadas; ");
+                    v1I= int.Parse(Console.ReadLine());
 
+                    totalD = v2D * v1I;
+                    Console.WriteLine("Olá, " +Nome+ ", seu código é " +idFu+ ", trabalhastes " +v1I+ " hora(s), seu valor hora é " +v2D+ ". O seu total a receber será; " +totalD.ToString("F2", CultureInfo.InvariantCulture));
                     
                     break;
                 case 5:
@@ -71,7 +81,7 @@ namespace Projeto01
 
                     break;
             }
-            Console.WriteLine("Aperte qualquer botão para encerrar.");
+            Console.WriteLine("Pressione qualquer tecla para encerrar.");
             Console.ReadLine();
 
         }
