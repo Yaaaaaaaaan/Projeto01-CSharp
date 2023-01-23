@@ -105,7 +105,11 @@ namespace Projeto01
                     qua = v2D * v2D;
                     ret = v1D * v2D;
 
-
+                    Console.WriteLine("O resultado do cálculo do triângulo é; " + tri.ToString("F3",CultureInfo.InvariantCulture));
+                    Console.WriteLine("O resultado do cálculo do círculo é; " + cir.ToString("F3", CultureInfo.InvariantCulture));
+                    Console.WriteLine("O resultado do cálculo do trapézio é; " + tra.ToString("F3", CultureInfo.InvariantCulture));
+                    Console.WriteLine("O resultado do cálculo do quadrado é; " + qua.ToString("F3", CultureInfo.InvariantCulture));
+                    Console.WriteLine("O resultado cálculo do do retângulo é; " + ret.ToString("F3", CultureInfo.InvariantCulture));
 
                     break;
             }
