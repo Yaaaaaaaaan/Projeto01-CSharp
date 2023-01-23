@@ -9,7 +9,8 @@ namespace Projeto01
         static void Main(string[] args)
         {
             int op, v1I, v2I, v3I, v4I, totalI, idFu;
-            double pi, v1D, v2D, totalD;
+            double pi, v1D, v2D, v3D, tri, cir, tra, qua, ret, totalD;
+            pi = 3.14159;
             Console.WriteLine("");
             Console.WriteLine("--x-- Exercício 01 Estrutura sequencial --x--");
             Console.WriteLine("Olá, selecione a operação digitando o número correspondente; ");
@@ -37,7 +38,6 @@ namespace Projeto01
                     Console.WriteLine("--x-- Calcular área --x--");
                     Console.WriteLine("Insira o valor do raio do círculo; ");
                     v1D = int.Parse(Console.ReadLine());
-                    pi = 3.14159;
                     totalD = pi * v1D * v1D;
                     Console.WriteLine("o calculo total é; " + pi + " * " +v1D+ " * " + v1D + " = " + totalD);
                     break;
@@ -92,6 +92,19 @@ namespace Projeto01
                     break;
                 case 6:
                     Console.WriteLine("--x-- Calculo triângulo --x--");
+                    Console.WriteLine("Insira o valor 1; ");
+                    v1D = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Insira o valor 2; ");
+                    v2D = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.WriteLine("Insira o valor 3; ");
+                    v3D = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    tri = v1D * v3D / 2.0;
+                    cir = 3.14159 * v3D * v3D;
+                    tra = (v1D + v2D) / 2.0 * v3D;
+                    qua = v2D * v2D;
+                    ret = v1D * v2D;
+
 
 
                     break;
